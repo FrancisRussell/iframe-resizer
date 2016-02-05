@@ -713,7 +713,7 @@
 		function setScrolling(){
 			log(iframeId,'IFrame scrolling ' + (settings[iframeId].scrolling ? 'enabled' : 'disabled') + ' for ' + iframeId);
 			iframe.style.overflow = false === settings[iframeId].scrolling ? 'hidden' : 'auto';
-			iframe.scrolling      = false === settings[iframeId].scrolling ? 'no' : 'yes';
+			iframe.scrolling      = false === settings[iframeId].scrolling ? 'no' : 'auto';
 		}
 
 		//The V1 iFrame script expects an int, where as in V2 expects a CSS
